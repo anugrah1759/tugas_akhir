@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Home page anugrah</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.processed.css">
+</head>
+
+<body>
+  <header role=”banner”>
+    <section>
+      <h1>Search</h1>
+      <div class="controllers">
+        <button class="reload" type="button">Load New Articles
+            <i class="fa fa-refresh"></i>
+          </button>
+        <button class="clear-btn" type="reset">Clear All
+            <i class="fa fa-trash"></i>
+          </button>
+        <div class="search">
+          <button type="submit">Search
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <div class="amount">
+          <button type="submit">Filter
+              <i class="fa fa-filter"></i>
+            </button>
+        </div>
+      </div>
+      <!--controllers-->
+    </section>
+  </header>
+  <div class="searchbar clearfix">
+    <button class="fa fa-search" type="submit"></button>
+    <input name="search" type="text" aria-label="Search" placeholder="Search" />
+  </div>
+  <div class="filterbar clearfix">
+    <button class="fa fa-filter" type="submit"></button>
+    <input name="filter" type="text" aria-label="Filter" placeholder="# of articles" />
+  </div>
+
+  <main class="clearfix" role="main">
+    <article class="wiki-article grid">
+    </article>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
